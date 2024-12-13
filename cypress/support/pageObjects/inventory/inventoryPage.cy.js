@@ -1,6 +1,6 @@
 export const inventoryPage = {
-    nome: '#user-name',
-    senha: '#password',
-    botao_login: '#login-button',
-    mensagem_erro: '[data-test="error"]'
+    logo: '.app_logo',
+    products: '.product_label',
+    lista_produtos: '.inventory_list',
+    filtro_ordenacao: '.product_sort_container'
 };

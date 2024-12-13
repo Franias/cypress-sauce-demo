@@ -1,4 +1,4 @@
-export const loginPage = {
+export const inventoryPage = {
     nome: '#user-name',
     senha: '#password',
     botao_login: '#login-button',

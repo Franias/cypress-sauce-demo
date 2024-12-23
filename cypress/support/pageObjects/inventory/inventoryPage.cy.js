@@ -2,5 +2,14 @@ export const inventoryPage = {
     logo: '.app_logo',
     products: '.product_label',
     lista_produtos: '.inventory_list',
-    filtro_ordenacao: '.product_sort_container'
+    filtro_ordenacao: '.product_sort_container',
+    botao_add_to_cart: '.pricebar > .btn_primary',
+    botao_remove_from_cart: '.pricebar > .btn_secondary',
+    primeiro_produto: ':nth-child(1) > .inventory_item_label',    
+    produto_backpack: '#item_4_title_link',
+    produto_bike_light: '#item_0_title_link',
+    produto_tshirt: '#item_1_title_link',
+    produto_jacket: '#item_5_title_link',
+    produto_onesie: '#item_2_title_link',
+    produto_tshirt_red: '#item_3_title_link',
 };

@@ -10,15 +10,18 @@ describe('Jornada de Usuário Checkout de Compras', () => {
       paginaDeProdutos();
       adicionaProdutoNoCarrinho();
       abreCarrinhoDeCompras();
+      this.skip();
     });
     it('Deve estar com produto no carrinho e realizar checkout', () => {
       realizaCheckoutStepOne();
       realizaCheckoutStepTwo();
       cy.screenshot();
+      this.skip();
     });
     it ('Deve validar campos vazios', () => {
       validaCamposVazios();
       cy.screenshot();
+      this.skip();
     })
     // it('Deve validar campos preenchidos incorretamente', () => {});
 

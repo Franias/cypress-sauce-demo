@@ -1,6 +1,9 @@
 import { inventoryPage } from '../inventory/inventoryPage.cy.js';
 
 export const paginaDeProdutos = () => {
+    cy.location().should((loc) => {
+        expect(loc.pathname).to.eq('/v1/inventory.html')
+    })
     cy.get(inventoryPage.logo).should('be.visible');
     cy.get(inventoryPage.products).should('be.visible');
     cy.get(inventoryPage.lista_produtos).should('be.visible');

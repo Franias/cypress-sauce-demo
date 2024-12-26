@@ -1,4 +1,4 @@
-name: cypress tests
+name: e2e tests
 
 on: [push]
 
@@ -11,5 +11,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
+

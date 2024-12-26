@@ -19,6 +19,8 @@ export const realizaCheckoutStepTwo = () => {
     cy.location().should((loc) => {
         expect(loc.pathname).to.eq('/v1/checkout-complete.html');
     });    
+    cy.get('.complete-header').should('be.visible');
+    cy.get('.complete-text').should('be.visible');
 }
 
 export const validaCamposVazios = () => {

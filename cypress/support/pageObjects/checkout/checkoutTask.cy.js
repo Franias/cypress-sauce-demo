@@ -1,6 +1,7 @@
 import { checkoutPage } from "./checkOutPage.cy";
 
 export const realizaCheckoutStepOne = () => {
+    cy.url().should('include','https://www.saucedemo.com/v1/cart.html')
     cy.get(checkoutPage.botao_checkout).click();
     cy.location().should((loc) => {
         expect(loc.pathname).to.eq('/v1/checkout-step-one.html');
@@ -12,6 +13,7 @@ export const realizaCheckoutStepOne = () => {
 }
 
 export const realizaCheckoutStepTwo = () => {
+    cy.url().should('include','https://www.saucedemo.com/v1/checkout-step-two.html')
     cy.location().should((loc) => {
         expect(loc.pathname).to.eq('/v1/checkout-step-two.html');
     });
@@ -19,8 +21,8 @@ export const realizaCheckoutStepTwo = () => {
     cy.location().should((loc) => {
         expect(loc.pathname).to.eq('/v1/checkout-complete.html');
     });    
-    cy.get('.complete-header').should('be.visible');
-    cy.get('.complete-text').should('be.visible');
+    cy.get(checkoutPage.mensagem_agradecimento).should('be.visible');
+    cy.get(checkoutPage.mensagem_completa).should('be.visible');
 }
 
 export const validaCamposVazios = () => {

@@ -6,5 +6,7 @@ export const checkoutPage = {
     botao_continue: '.cart_button',
     mensagem_erro: '[data-test="error"]',
     botao_continue_step_one: '.btn_primary',
-    botao_finish: '.btn_action'
+    botao_finish: '.btn_action',
+    mensagem_agradecimento: '.complete-header',
+    mensagem_completa: '.complete-text'
 }

@@ -1,6 +1,6 @@
-import {logaUsuario} from '../support/pageObjects/login/loginTask.cy';
-import {paginaDeProdutos , adicionaProdutoNoCarrinho} from '../support/pageObjects/inventory/inventoryTask.cy';
-import {abreCarrinhoDeCompras, continuaComprando, removeProdutoDoCarrinho} from '../support/pageObjects/cart/cartTask.cy';
+import {logaUsuario} from '../../support/pageObjects/login/loginTask.cy';
+import {paginaDeProdutos , adicionaProdutoNoCarrinho} from '../../support/pageObjects/inventory/inventoryTask.cy';
+import {abreCarrinhoDeCompras, continuaComprando, removeProdutoDoCarrinho} from '../../support/pageObjects/cart/cartTask.cy';
 
 describe('Jornada de Usuário', () => {
     beforeEach(()=> {

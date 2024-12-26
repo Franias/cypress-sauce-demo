@@ -1,5 +1,5 @@
-import {logaUsuario} from '../support/pageObjects/login/loginTask.cy';
-import {paginaDeProdutos, validaFiltro, adicionaProdutoNoCarrinho, removeProdutoNoCarrinho} from '../support/pageObjects/inventory/inventoryTask.cy';
+import {logaUsuario} from '../../support/pageObjects/login/loginTask.cy';
+import {paginaDeProdutos, validaFiltro, adicionaProdutoNoCarrinho, removeProdutoNoCarrinho} from '../../support/pageObjects/inventory/inventoryTask.cy';
 
 describe('Jornada de Usuário', () => {
     beforeEach(()=> {

@@ -1,4 +1,4 @@
-import {validaCamposInvalidos, logaUsuario, validaCamposVazios} from '../support/pageObjects/login/loginTask.cy';
+import {validaCamposInvalidos, logaUsuario, validaCamposVazios} from '../../support/pageObjects/login/loginTask.cy';
 
 describe('Jornada de Usuário', () => {
     beforeEach(()=> {

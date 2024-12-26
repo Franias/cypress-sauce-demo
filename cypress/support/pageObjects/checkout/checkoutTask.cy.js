@@ -2,9 +2,8 @@ import { checkoutPage } from "./checkOutPage.cy";
 
 export const realizaCheckoutStepOne = () => {
     cy.get(checkoutPage.botao_checkout).click();
-
     cy.location().should((loc) => {
-        expect(loc.pathname).to.eq('/v1/checkout-step-one.html')
+        expect(loc.pathname).to.eq('/v1/checkout-step-one.html');
     })
     cy.get(checkoutPage.nome).type('teste');
     cy.get(checkoutPage.sobrenome).type('teste');
@@ -14,14 +13,12 @@ export const realizaCheckoutStepOne = () => {
 
 export const realizaCheckoutStepTwo = () => {
     cy.location().should((loc) => {
-        expect(loc.pathname).to.eq('/v1/checkout-step-two.html')
-    })
-    cy.get(checkoutPage.botao_finish).click();
-    
+        expect(loc.pathname).to.eq('/v1/checkout-step-two.html');
+    });
+    cy.get(checkoutPage.botao_finish).click();    
     cy.location().should((loc) => {
-        expect(loc.pathname).to.eq('/v1/checkout-complete.html')
-    })
-    
+        expect(loc.pathname).to.eq('/v1/checkout-complete.html');
+    });    
 }
 
 export const validaCamposVazios = () => {

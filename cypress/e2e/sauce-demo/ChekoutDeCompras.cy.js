@@ -19,4 +19,8 @@ describe('Jornada de Usuário', () => {
     it ('Deve validar campos vazios', () => {
       validaCamposVazios();
     })
+
+    // it('Deve validar campos preenchidos incorretamente', () => {});
+
+    // it('Não deve permitir compras com nenhum item', () => {});
 });

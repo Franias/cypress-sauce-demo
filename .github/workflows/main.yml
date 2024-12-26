@@ -12,3 +12,11 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           build: npm i -D cypress
+      - name: store screenshots
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cyprees-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore
+      
